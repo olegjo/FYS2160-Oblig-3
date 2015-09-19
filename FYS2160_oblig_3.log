@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.21)  19 SEP 2015 12:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.21)  19 SEP 2015 20:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -600,17 +600,31 @@ File: FYS2160-oblig-3-fig-conc-n-T.pdf Graphic file (type pdf)
 Package pdftex.def Info: FYS2160-oblig-3-fig-conc-n-T.pdf used on input line 16
 1.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
- [2] [3 <./FYS2160-oblig-3-fig-conc-n-T.pdf>] 
+ [2]
+<FYS2160-oblig-3-fig-heat-capacity.pdf, id=22, 578.16pt x 433.62pt>
+File: FYS2160-oblig-3-fig-heat-capacity.pdf Graphic file (type pdf)
+
+<use FYS2160-oblig-3-fig-heat-capacity.pdf>
+Package pdftex.def Info: FYS2160-oblig-3-fig-heat-capacity.pdf used on input li
+ne 188.
+(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+ [3 <./FYS2160-oblig-3-fig-conc-n-T.pdf>] [4 <./FYS2160-oblig-3-fig-heat-capaci
+ty.pdf>]
+Overfull \hbox (103.44472pt too wide) in paragraph at lines 236--236
+[] 
+ []
+
+[5] [6] 
 AED: lastpage setting LastPage
 (./FYS2160_oblig_3.aux) ) 
 Here is how much of TeX's memory you used:
- 6961 strings out of 493089
- 99966 string characters out of 6134842
- 182622 words of memory out of 5000000
- 10323 multiletter control sequences out of 15000+600000
+ 6974 strings out of 493089
+ 100361 string characters out of 6134842
+ 186681 words of memory out of 5000000
+ 10335 multiletter control sequences out of 15000+600000
  12041 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,14n,38p,245b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,14n,38p,672b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
@@ -623,10 +637,10 @@ m/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 10.pfb>
-Output written on FYS2160_oblig_3.pdf (3 pages, 134104 bytes).
+Output written on FYS2160_oblig_3.pdf (6 pages, 160097 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 177 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 12 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

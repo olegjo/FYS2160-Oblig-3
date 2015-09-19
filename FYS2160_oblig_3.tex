@@ -122,13 +122,14 @@
 			\end{align}
 			when the number of particles $N$ and the volume $V$ is held constant. To free atoms in the crystal so that there are $n$ vacancies, requires energy equal to
 			\begin{align*}
-				U = n\Delta \epsilon \Rightarrow n = \frac{U}{\Delta \epsilon}
+				U = \epsilon_0 + n\Delta \epsilon \Rightarrow n = \frac{U - \epsilon_0}{\Delta \epsilon}
 			\end{align*}
 			Plugging this back into eq. \eqref{eq: entropy crystal simp final} and using eq. \eqref{eq: definition temperature}, we get
 			\begin{align*}
-				\frac{1}{T} 	&= \frac{\partial}{\partial U} \left( k \frac{U}{\Delta \epsilon} \left( \ln \left( \frac{N \Delta \epsilon}{U} \right) + \frac{U}{N\Delta \epsilon} + 1 \right)  \right) \\
-									&= \frac{k}{\Delta \epsilon} \left( \ln  \frac{N}{n}  + \frac{2n}{N} \right) \\
-			\Rightarrow T	&= \frac{\Delta \epsilon}{k} \left( \ln  \frac{N}{n}  +\frac{2n}{N} \right) ^{-1}
+				\frac{1}{T} 	&= \frac{\partial}{\partial U} \left( k \frac{U-\epsilon_0}{\Delta \epsilon} \left( \ln \left( \frac{N \Delta \epsilon}{U-\epsilon_0} \right) + \frac{U-\epsilon_0}{N\Delta \epsilon} + 1 \right)  \right) \\
+									&= \frac{k}{\Delta \epsilon} \ln \left( \frac{N\Delta \epsilon}{U-\epsilon_0} \right)  \\
+									&= \frac{k}{\Delta \epsilon} \ln \frac{N}{n} \\
+			\Rightarrow T	&= \frac{\Delta \epsilon}{k} \left(\ln \frac{N}{n}\right) ^{-1}
 			\end{align*}
 			
 			
@@ -137,12 +138,11 @@
 		\item[e)]
 			From the previous task, we have
 			\begin{align*}
-				T = \frac{\Delta \epsilon}{k} \left( \ln  \frac{N}{n}  +\frac{2n}{N} \right) ^{-1}
+				T = \frac{\Delta \epsilon}{k} \left(\ln \frac{N}{n}\right) ^{-1}
 			\end{align*}
-			In the limit when $N>>n$ (i.e. small temperatures), $\ln  \frac{N}{n}  >> \frac{2n}{N}$. In this limit, the temperature is
+			Rearranging, we get
 			\begin{align}
-				T &\approx \frac{\Delta \epsilon}{k}\left( \ln \frac{n}{N} \right) ^{-1} \nonumber\\
-				\Rightarrow n &\approx Ne^{-\Delta\epsilon/(kT)} \label{eq: crystal number of vacancies n(T)}
+				\Rightarrow n = Ne^{-\Delta\epsilon/(kT)} \label{eq: crystal number of vacancies n(T)}
 			\end{align}
 			
 			
@@ -156,7 +156,7 @@
 		
 		\item[g)]
 			Assuming $\Delta \epsilon = 1$ eV, the concentration of vacancies $n/N$ is plotted in fig. \ref{fig: concentration of vacancies}
-			\begin{figure}
+			\begin{figure}[H]
 				\centering
 				\includegraphics[scale=0.7, clip=true, trim= 0 0 0 0]{FYS2160-oblig-3-fig-conc-n-T.pdf}
 				\caption{Concentration of vacancies $n/N$ in the crystal as a function of temperature.}
@@ -171,18 +171,19 @@
 			\begin{align*}
 				C_V = \left( \frac{\partial U}{\partial T} \right) _{N,V}
 			\end{align*}
-			Again, using that the total energy needed to make $n$ vacancies is $U$. Then $n=U/\Delta \epsilon$ as above. Eq. \eqref{eq: crystal number of vacancies n(T)} then becomes
+			Again, using that the total energy needed to make $n$ vacancies is $U=\epsilon_0+n\Delta \epsilon$. Then $n=(U-\epsilon_0)/\Delta \epsilon$ as above. Eq. \eqref{eq: crystal number of vacancies n(T)} then becomes
 			\begin{align*}
-				\frac{U}{\Delta \epsilon} &= Ne^{-\Delta \epsilon/(kT)} \\
-				U = \Delta \epsilon Ne^{-\Delta \epsilon /(kT)} 
+				\frac{U-\epsilon_0}{\Delta \epsilon} &= Ne^{-\Delta \epsilon/(kT)} \\
+				U &= \Delta \epsilon Ne^{-\Delta \epsilon /(kT)}  + \epsilon_0
 			\end{align*}
 			so the expression for the specific heat capacity is
 			\begin{align*}
-				C_V &= \Delta \epsilon Ne^{-\Delta \epsilon/(kT)} \cdot \frac{\Delta \epsilon}{kT^2} \\
+				C_V &=  \left( \frac{\partial U}{\partial T} \right) _{N,V} \\
+				&= \Delta \epsilon Ne^{-\Delta \epsilon/(kT)} \cdot \frac{\Delta \epsilon}{kT^2} \\
 				&= \frac{\Delta \epsilon^2 N}{kT^2}e^{-\Delta \epsilon /(kT)}
 			\end{align*}
-			A plot of this in the temperature range from $T=0$ to $T=1000$ K is found in fig. \ref{fig: crystal heat capacity}. 
-			\begin{figure}
+			Fig. \ref{fig: crystal heat capacity} shows a plot of this in the temperature range from $T=0$ to $T=1000$ K. The heat capacity seems to be very high at high temperatures compared to lower temperatures. Whether or not this is a true behaviour is not easy to say without any experimental data, however, the expression for the heat capacity was derived under the assumption of $n<<N$ - i.e. low temperatures. 1000K may not be a very low temperature.
+			\begin{figure}[H]
 				\centering
 				\includegraphics[scale=0.7, clip=true, trim= 0 0 0 0]{FYS2160-oblig-3-fig-heat-capacity.pdf}
 				\caption{Specific heat capacity of the crystal as a function of temperature}
@@ -193,6 +194,13 @@
 	\end{itemize}
 \end{exercise}
 
+
+
+\begin{exercise}
+	\begin{itemize}
+		\item[a)]
+	\end{itemize}
+\end{exercise}
 
 \begin{bottompar}
 \begin{center}
